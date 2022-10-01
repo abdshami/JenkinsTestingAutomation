@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Addresses Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="csvfilePath" value="testCasesAddresses.csv"/>
+  <test thread-count="5" name=" add address test(failed)">
+    <classes>
+      <class name="com.testaddressbook.selenuim.DataProviderTestAddresses">
+        <methods>
+          <include name="AfterAll"/>
+          <include name="testCsvDataString" invocation-numbers="0 1 2"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.testaddressbook.selenuim.DataProviderTestAddresses -->
+    </classes>
+  </test> <!--  add address test(failed) -->
+  <test thread-count="5" name=" update address test(failed)">
+    <classes>
+      <class name="com.testaddressbook.selenuim.DataProviderTestAddresses">
+        <methods>
+          <include name="AfterAll"/>
+        </methods>
+      </class> <!-- com.testaddressbook.selenuim.DataProviderTestAddresses -->
+      <class name="com.testaddressbook.selenuim.TestUpdateAddress">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="updateAddress"/>
+        </methods>
+      </class> <!-- com.testaddressbook.selenuim.TestUpdateAddress -->
+    </classes>
+  </test> <!--  update address test(failed) -->
+</suite> <!-- Failed suite [Addresses Suite] -->
