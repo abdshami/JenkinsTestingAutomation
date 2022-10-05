@@ -1,0 +1,16 @@
+
+       
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" > 
+
+<suite name="Booking  Suite" >
+  <parameter name="browser"  value="chrome"/>
+ <test name=" test Booking site" >
+    <classes>
+       <class name="Core.Test1" />
+    </classes>
+  </test>
+</suite>
+   
+      
+      
+      
